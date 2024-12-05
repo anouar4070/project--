@@ -38,3 +38,10 @@ function PostsList({ isPosting, onStopPosting }) {
 }
 
 export default PostsList;
+
+/**
+ 1- PostsList defines addPostHandler to manage new posts.
+ 2- addPostHandler is passed to the NewPost component via the onAddPost prop.
+ 3- On submission, NewPost calls onAddPost with the post data.
+ 4- addPostHandler updates the state in PostsList, which triggers a re-render and displays the updated list of posts.
+ */
